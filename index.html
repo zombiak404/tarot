@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Taro Card</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="tarot.js"></script>
+  </head>
+  <body style="background: #311d52;">
+    <div id="fullpage">
+      <div data-anchor="firstPage" class="section">
+        <div class="header-text">
+          Focus on your state. Click a deck of cards. Scroll down. Read about
+          your emotional condition.<br /><br />Don't get too involved card just
+          shows your mood and is not a fortune teller. Also find the cards
+          divided in astrological houses. Click the deck again to repeat.
+        </div>
+
+        <div id="rider-waite">
+          <a href="#" onclick="load('rider-waite');">Rider Waite Tarot</a>
+        </div>
+
+        <div id="main-card">
+          <img class="front-img" />
+          <div class="cover">
+            <img
+              class="cover-img"
+              src="https://raw.githubusercontent.com/alnero/Zipline-data/master/Taro/img/deck.png"
+            />
+          </div>
+        </div>
+
+        <div id="card-name"></div>
+
+        <div class="spinner">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+      <!-- firstPage -->
+
+      <div data-anchor="secondPage" class="section">
+        <div id="wrapper">
+          <div id="I-VI" class="column">
+            <div id="I" class="left">I</div>
+            <div id="II" class="left">II</div>
+            <div id="III" class="left">III</div>
+            <div id="IV" class="left">IV</div>
+            <div id="V" class="left">V</div>
+            <div id="VI" class="left">VI</div>
+          </div>
+          <!-- I-VI -->
+
+          <div id="VII-XII" class="column">
+            <div id="VII" class="right">VII</div>
+            <div id="VIII" class="right">VIII</div>
+            <div id="IX" class="right">IX</div>
+            <div id="X" class="right">X</div>
+            <div id="XI" class="right">XI</div>
+            <div id="XII" class="right">XII</div>
+          </div>
+          <!-- VII-XII -->
+
+          <div class="card-description">
+            <div class="small-card"></div>
+          </div>
+        </div>
+      </div>
+      <!-- secondPage -->
+    </div>
+    <!-- fullpage -->
+  </body>
+</html>
